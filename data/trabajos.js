@@ -67,7 +67,8 @@ window.TRABAJOS = [
     id: "drexler-taraca",
     titulo: "Jorge Drexler — Taracá",
     rol: { es: "Cámara y edición", en: "Camera / Edit" },
-    youtube: "https://www.youtube.com/watch?v=N5TXzAPGppc"
+    youtube: "https://www.youtube.com/watch?v=N5TXzAPGppc",
+    loop: "1249700316"
   },
   {
     id: "la-vela-puerca",
