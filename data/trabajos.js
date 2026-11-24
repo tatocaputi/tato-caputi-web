@@ -79,6 +79,13 @@ window.TRABAJOS = [
     titulo: "Cosquín Rock",
     rol: { es: "Director / DoP", en: "Director / DoP" },
     vimeo: "1209310746"
+  },
+  {
+    id: "flashmob-salus",
+    titulo: "Flashmob Salus",
+    rol: { es: "Camera / BTS", en: "Camera / BTS" },
+    youtube: "https://www.youtube.com/watch?v=Z-_e7Nx3crE",
+    loop: "1249737071"
   }
 
 ];
