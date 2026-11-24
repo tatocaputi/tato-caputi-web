@@ -10,8 +10,10 @@
      seccion   "direccion", "fotografia" o "live".
      rol       { es: "...", en: "..." }  tu rol en la pieza.
      vimeo     número del video de Vimeo (de https://vimeo.com/NUMERO).
+     youtube   link de YouTube. Si el trabajo no tiene vimeo, se usa este:
+               en la grilla aparece la portada del video y en la página
+               del trabajo, el reproductor de YouTube.
      anio      opcional, ej. "2026".
-     youtube   opcional, link a la versión completa en YouTube.
      oculto    opcional: true lo esconde sin borrarlo.
 
    Para agregar uno: copiá un bloque entero, pegalo donde quieras que
@@ -56,7 +58,7 @@ window.TRABAJOS = [
     titulo: "Famidesa",
     seccion: "fotografia",
     rol: { es: "Dirección de fotografía y cámara", en: "DoP / Camera" },
-    vimeo: "1208209260"
+    youtube: "https://www.youtube.com/watch?v=amJ-Ktg5FJ8"
   },
   {
     id: "la-roche-posay",
@@ -72,7 +74,6 @@ window.TRABAJOS = [
     titulo: "Jorge Drexler — Taracá",
     seccion: "live",
     rol: { es: "Cámara y edición", en: "Camera / Edit" },
-    vimeo: "1208199537",
     youtube: "https://www.youtube.com/watch?v=N5TXzAPGppc"
   },
   {

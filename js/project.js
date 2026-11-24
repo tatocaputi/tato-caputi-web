@@ -7,6 +7,10 @@
 
   var i18n = window.TC && window.TC.i18n;
   function vimeoId(v) { return String(v || '').replace(/\D/g, ''); }
+  function youtubeId(u) {
+    var m = String(u || '').match(/(?:v=|youtu\.be\/|embed\/|shorts\/)([\w-]{11})/);
+    return m ? m[1] : (/^[\w-]{11}$/.test(String(u || '')) ? u : '');
+  }
   var root = document.getElementById('project');
   if (!root) return;
 
@@ -35,13 +39,14 @@
   document.title = w.titulo + ' — Tato Caputi';
   var next = lista[(idx + 1) % lista.length];
   var vid = vimeoId(w.vimeo);
+  var yt = vid ? '' : youtubeId(w.youtube);   // sin Vimeo, el video principal sale de YouTube
 
   root.innerHTML =
-    (vid ? '<div class="vimeo-wrap fade-in" id="vimeo-mount"><div class="placeholder" data-i18n="project.loading"></div></div>' : '') +
+    ((vid || yt) ? '<div class="vimeo-wrap fade-in" id="vimeo-mount"><div class="placeholder" data-i18n="project.loading"></div></div>' : '') +
     '<div class="project-info fade-in">' +
       '<div><span class="meta" id="project-role"></span><h1>' + esc(w.titulo) + '</h1></div>' +
       '<div class="project-links">' +
-        (w.youtube ? '<a class="btn-ghost" target="_blank" rel="noopener noreferrer" href="' + esc(w.youtube) + '"><span data-i18n="project.youtube"></span><span>↗</span></a>' : '') +
+        (w.youtube && vid ? '<a class="btn-ghost" target="_blank" rel="noopener noreferrer" href="' + esc(w.youtube) + '"><span data-i18n="project.youtube"></span><span>↗</span></a>' : '') +
         '<a class="btn-ghost" href="/work/" data-i18n-word="nav.work"><span data-i18n="project.all"></span></a>' +
         (next && next !== w ? '<a class="btn-ghost" href="/project/?w=' + encodeURIComponent(next.id) + '" data-text="' + esc(next.titulo.toUpperCase()) + '"><span data-i18n="project.next"></span><span class="arrow">→</span></a>' : '') +
       '</div>' +
@@ -57,10 +62,12 @@
   role();
   document.addEventListener('tc:langchange', role);
 
-  if (vid) {
+  if (vid || yt) {
     var mount = document.getElementById('vimeo-mount');
     var f = document.createElement('iframe');
-    f.src = 'https://player.vimeo.com/video/' + vid + '?title=0&byline=0&portrait=0&dnt=1';
+    f.src = vid
+      ? 'https://player.vimeo.com/video/' + vid + '?title=0&byline=0&portrait=0&dnt=1'
+      : 'https://www.youtube-nocookie.com/embed/' + yt + '?rel=0&modestbranding=1&playsinline=1&color=white';
     f.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture');
     f.setAttribute('allowfullscreen', '');
     f.setAttribute('title', w.titulo);

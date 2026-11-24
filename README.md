@@ -36,7 +36,9 @@ y abrí http://localhost:8000
 
 ## Videos
 
-Todos los videos salen de Vimeo. Para que se vean bien como fondo (sin controles, en loop), cada video en Vimeo tiene que permitir ser embebido en cualquier sitio o en `tato.caputi.uy` (Vimeo → video → Settings → Privacy → Embed).
+Cada trabajo puede usar Vimeo (`vimeo`) o YouTube (`youtube`). Con Vimeo, la tarjeta de la grilla muestra el video en loop; con YouTube, muestra la portada del video y la página del trabajo usa el reproductor de YouTube.
+
+Para que se vean bien como fondo (sin controles, en loop), cada video en Vimeo tiene que permitir ser embebido en cualquier sitio o en `tato.caputi.uy` (Vimeo → video → Settings → Privacy → Embed).
 
 ## Links viejos
 

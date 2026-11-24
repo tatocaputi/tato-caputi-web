@@ -11,6 +11,10 @@
 
   var i18n = window.TC && window.TC.i18n;
   function vimeoId(v) { return String(v || '').replace(/\D/g, ''); }
+  function youtubeId(u) {
+    var m = String(u || '').match(/(?:v=|youtu\.be\/|embed\/|shorts\/)([\w-]{11})/);
+    return m ? m[1] : (/^[\w-]{11}$/.test(String(u || '')) ? u : '');
+  }
   var trabajos = (window.TRABAJOS || []).filter(function (w) { return w && !w.oculto; });
 
   function esc(s) {
@@ -21,10 +25,14 @@
 
   function card(w) {
     var id = vimeoId(w.vimeo);
+    var yt = youtubeId(w.youtube);
     var media = id
       ? '<div class="card-video" aria-hidden="true"><iframe data-src="https://player.vimeo.com/video/' + id +
         '?background=1&autoplay=1&loop=1&muted=1&autopause=0&dnt=1" allow="autoplay; fullscreen" tabindex="-1" title=""></iframe></div>'
-      : '';
+      : yt
+        /* Videos de YouTube: en la grilla se muestra la portada del video (YouTube no permite un loop limpio) */
+        ? '<img class="cover" src="https://i.ytimg.com/vi/' + yt + '/maxresdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=this.src.replace(\'maxresdefault\',\'hqdefault\')">'
+        : '';
     var rol = w.rol ? '<span class="meta" data-rol-es="' + esc(w.rol.es) + '" data-rol-en="' + esc(w.rol.en) + '"></span>' : '';
     return '<a href="/project/?w=' + encodeURIComponent(w.id) + '" class="work-card" data-text="' + esc(String(w.titulo).toUpperCase()) + '">' +
       media + '<div class="label">' + rol + '<span class="title">' + esc(w.titulo) + '</span></div></a>';
