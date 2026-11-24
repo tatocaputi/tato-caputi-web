@@ -23,6 +23,9 @@
       'home.year': '@2026',
 
 
+      'work.social': 'Contenido para redes',
+      'work.social.link': 'Ver en Instagram',
+
       'about.intro': 'Historias contadas con intención.<br><br>Narrativa, emoción y atención al detalle para crear piezas con una identidad propia.',
 
       'contact.label': 'Contacto',
@@ -47,6 +50,9 @@
       'home.place': 'Montevideo, Uruguay',
       'home.year': '@2026',
 
+
+      'work.social': 'Social media content',
+      'work.social.link': 'See it on Instagram',
 
       'about.intro': 'Purpose-driven storytelling.<br><br>Blending narrative, emotion, and attention to detail to create work with a distinct identity.',
 
