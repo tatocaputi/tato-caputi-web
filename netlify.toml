@@ -1,0 +1,4 @@
+# Netlify: el sitio no necesita compilarse, se publica tal cual.
+[build]
+  publish = "."
+  command = ""
