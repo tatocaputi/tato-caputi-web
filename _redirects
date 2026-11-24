@@ -1,0 +1,11 @@
+# Links viejos de la web anterior -> nuevos (Netlify)
+/porsche               /project/?w=porsche          301
+/adidas                /project/?w=adidas           301
+/costablancaespana     /project/?w=costa-blanca     301
+/jdva                  /project/?w=jdva             301
+/orientalfilms         /project/?w=famidesa         301
+/larocheposaybackstage /project/?w=la-roche-posay   301
+/jorgedrexlertaraca    /project/?w=drexler-taraca   301
+/lavelapuerca          /project/?w=la-vela-puerca   301
+/cosquinrock           /project/?w=cosquin-rock     301
+/admin                 /                            301
