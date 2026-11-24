@@ -86,6 +86,13 @@ window.TRABAJOS = [
     rol: { es: "Camera / BTS", en: "Camera / BTS" },
     youtube: "https://www.youtube.com/watch?v=Z-_e7Nx3crE",
     loop: "1249737071"
+  },
+  {
+    id: "frontline",
+    titulo: "Frontline",
+    rol: { es: "Director / DoP", en: "Director / DoP" },
+    youtube: "https://www.youtube.com/watch?v=h8LXtRl4CCU",
+    loop: "1249740102"
   }
 
 ];
