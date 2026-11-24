@@ -30,7 +30,24 @@
 
   /* ---------- Video de fondo ---------- */
   document.querySelectorAll('[data-bg-vimeo]').forEach(function (wrap) {
-    var id = vimeoId(S[wrap.getAttribute('data-bg-vimeo')]);
+    var val = String(S[wrap.getAttribute('data-bg-vimeo')] || '');
+
+    /* Archivo de video propio (ej. "/assets/videos/acerca.mp4") */
+    if (/\.(mp4|webm|mov)$/i.test(val)) {
+      var v = document.createElement('video');
+      v.muted = true; v.loop = true; v.autoplay = true; v.playsInline = true;
+      v.setAttribute('muted', ''); v.setAttribute('playsinline', ''); v.setAttribute('aria-hidden', 'true');
+      v.preload = 'auto';
+      v.poster = val.replace(/\.(mp4|webm|mov)$/i, '.jpg');
+      v.src = val;
+      v.addEventListener('canplay', function () { wrap.classList.add('is-ready'); });
+      wrap.appendChild(v);
+      var p = v.play(); if (p && p.catch) p.catch(function () {});
+      return;
+    }
+
+    /* Video de Vimeo */
+    var id = vimeoId(val);
     if (!id) return;
     var f = document.createElement('iframe');
     f.src = 'https://player.vimeo.com/video/' + id +
