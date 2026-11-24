@@ -1,13 +1,12 @@
 /* =====================================================================
    TRABAJOS
-   Cada bloque { ... } es un trabajo. Aparecen en este orden dentro de
-   su sección.
+   Cada bloque { ... } es un trabajo. En la página Trabajo aparecen en
+   este mismo orden: el primero de la lista es el primero de la grilla.
 
    Campos:
      id        palabra corta, sin espacios ni tildes. Arma el link:
                /project/?w=porsche
      titulo    como se ve en la web.
-     seccion   "direccion", "fotografia" o "live".
      rol       { es: "...", en: "..." }  tu rol en la pieza.
      vimeo     número del video de Vimeo (de https://vimeo.com/NUMERO).
      youtube   link de YouTube. Si el trabajo no tiene vimeo, se usa este:
@@ -21,72 +20,60 @@
    ===================================================================== */
 window.TRABAJOS = [
 
-  /* ---------- DIRECCIÓN ---------- */
   {
     id: "porsche",
     titulo: "Porsche — Spec Commercial",
-    seccion: "direccion",
     rol: { es: "Dirección y fotografía", en: "Director / DoP" },
     vimeo: "1239275800"
   },
   {
     id: "adidas",
     titulo: "Adidas",
-    seccion: "direccion",
     rol: { es: "Dirección y fotografía", en: "Director / DoP" },
     vimeo: "1199077476"
   },
   {
     id: "costa-blanca",
     titulo: "Costa Blanca, España",
-    seccion: "direccion",
     rol: { es: "Dirección y fotografía", en: "Director / DoP" },
     vimeo: "1201097513"
   },
   {
     id: "jdva",
     titulo: "JDVA",
-    seccion: "direccion",
     rol: { es: "Dirección y fotografía", en: "Director / DoP" },
     vimeo: "1209322533",
     anio: "2026"
   },
 
-  /* ---------- FOTOGRAFÍA ---------- */
   {
     id: "famidesa",
     titulo: "Famidesa",
-    seccion: "fotografia",
     rol: { es: "Dirección de fotografía y cámara", en: "DoP / Camera" },
     youtube: "https://www.youtube.com/watch?v=amJ-Ktg5FJ8"
   },
   {
     id: "la-roche-posay",
     titulo: "La Roche-Posay — Backstage",
-    seccion: "fotografia",
     rol: { es: "Cámara y edición", en: "Camera / Edit" },
     vimeo: "1201097169"
   },
 
-  /* ---------- LIVE / MUSIC ---------- */
   {
     id: "drexler-taraca",
     titulo: "Jorge Drexler — Taracá",
-    seccion: "live",
     rol: { es: "Cámara y edición", en: "Camera / Edit" },
     youtube: "https://www.youtube.com/watch?v=N5TXzAPGppc"
   },
   {
     id: "la-vela-puerca",
     titulo: "La Vela Puerca",
-    seccion: "live",
     rol: { es: "Edición en vivo", en: "Live Edit" },
     vimeo: "1201096690"
   },
   {
     id: "cosquin-rock",
     titulo: "Cosquín Rock",
-    seccion: "live",
     rol: { es: "Dirección y fotografía", en: "Director / DoP" },
     vimeo: "1209310746"
   }

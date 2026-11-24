@@ -1,11 +1,10 @@
 /* =====================================================================
-   Página Trabajo: arma la grilla desde data/trabajos.js
-   Las secciones aparecen en este orden. Una sección sin trabajos no se muestra.
+   Página Trabajo: arma la grilla desde data/trabajos.js,
+   en el mismo orden en que están escritos ahí.
    ===================================================================== */
 (function () {
   'use strict';
 
-  var SECCIONES = ['direccion', 'fotografia', 'live'];
   var root = document.getElementById('works');
   if (!root) return;
 
@@ -38,15 +37,7 @@
       media + '<div class="label">' + rol + '<span class="title">' + esc(w.titulo) + '</span></div></a>';
   }
 
-  var n = 0;
-  root.innerHTML = SECCIONES.map(function (s) {
-    var items = trabajos.filter(function (w) { return w.seccion === s; });
-    if (!items.length) return '';
-    n++;
-    return '<section class="works-section" id="' + s + '">' +
-      '<h2 class="works-heading"><span class="num">0' + n + '</span><span class="name" data-i18n="work.' + s + '"></span></h2>' +
-      '<div class="works-grid">' + items.map(card).join('') + '</div></section>';
-  }).join('');
+  root.innerHTML = '<div class="works-grid">' + trabajos.map(card).join('') + '</div>';
 
   function roles() {
     var lang = i18n ? i18n.getLang() : 'es';

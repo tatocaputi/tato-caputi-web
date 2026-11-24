@@ -15,8 +15,6 @@
   if (!root) return;
 
   var lista = (window.TRABAJOS || []).filter(function (w) { return w && !w.oculto; });
-  var orden = ['direccion', 'fotografia', 'live'];
-  lista.sort(function (a, b) { return orden.indexOf(a.seccion) - orden.indexOf(b.seccion); });
 
   var id = new URLSearchParams(window.location.search).get('w');
   var idx = -1;

@@ -22,9 +22,6 @@
       'home.place': 'Montevideo, Uruguay',
       'home.year': '@2026',
 
-      'work.direccion': 'Dirección',
-      'work.fotografia': 'Fotografía',
-      'work.live': 'Live / Music',
 
       'about.intro': 'Historias contadas con intención.<br><br>Narrativa, emoción y atención al detalle para crear piezas con una identidad propia.',
 
@@ -50,9 +47,6 @@
       'home.place': 'Montevideo, Uruguay',
       'home.year': '@2026',
 
-      'work.direccion': 'Direction',
-      'work.fotografia': 'Cinematography',
-      'work.live': 'Live / Music',
 
       'about.intro': 'Purpose-driven storytelling.<br><br>Blending narrative, emotion, and attention to detail to create work with a distinct identity.',
 
