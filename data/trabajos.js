@@ -12,6 +12,9 @@
      youtube   link de YouTube. Si el trabajo no tiene vimeo, se usa este:
                en la grilla aparece la portada del video y en la página
                del trabajo, el reproductor de YouTube.
+     loop      opcional, número de Vimeo de un corte corto que se usa
+               solo como loop en la tarjeta de la grilla. El video
+               completo sigue saliendo de vimeo o youtube.
      anio      opcional, ej. "2026".
      oculto    opcional: true lo esconde sin borrarlo.
 
@@ -50,7 +53,8 @@ window.TRABAJOS = [
     id: "famidesa",
     titulo: "Famidesa",
     rol: { es: "Dirección de fotografía y cámara", en: "DoP / Camera" },
-    youtube: "https://www.youtube.com/watch?v=amJ-Ktg5FJ8"
+    youtube: "https://www.youtube.com/watch?v=amJ-Ktg5FJ8",
+    loop: "1249699288"
   },
   {
     id: "la-roche-posay",

@@ -23,7 +23,7 @@
   }
 
   function card(w) {
-    var id = vimeoId(w.vimeo);
+    var id = vimeoId(w.loop || w.vimeo);   // loop: video corto solo para la tarjeta
     var yt = youtubeId(w.youtube);
     var media = id
       ? '<div class="card-video" aria-hidden="true"><iframe data-src="https://player.vimeo.com/video/' + id +
