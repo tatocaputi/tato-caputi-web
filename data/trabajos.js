@@ -25,61 +25,59 @@ window.TRABAJOS = [
 
   {
     id: "porsche",
-    titulo: "Porsche — Spec Commercial",
-    rol: { es: "Dirección y fotografía", en: "Director / DoP" },
+    titulo: "Porsche Spec Commercial",
+    rol: { es: "Director / DoP", en: "Director / DoP" },
     vimeo: "1239275800"
+  },
+  {
+    id: "drexler-taraca",
+    titulo: "Jorge Drexler, Taracá",
+    rol: { es: "Camera / Edit", en: "Camera / Edit" },
+    youtube: "https://www.youtube.com/watch?v=N5TXzAPGppc",
+    loop: "1249700316"
   },
   {
     id: "adidas",
     titulo: "Adidas",
-    rol: { es: "Dirección y fotografía", en: "Director / DoP" },
+    rol: { es: "Director / DoP", en: "Director / DoP" },
     vimeo: "1199077476"
+  },
+  {
+    id: "la-vela-puerca",
+    titulo: "La Vela Puerca",
+    rol: { es: "Live Edit", en: "Live Edit" },
+    vimeo: "1201096690"
+  },
+  {
+    id: "famidesa",
+    titulo: "Oriental Films - Famidesa",
+    rol: { es: "DoP / Camera", en: "DoP / Camera" },
+    youtube: "https://www.youtube.com/watch?v=amJ-Ktg5FJ8",
+    loop: "1249699288"
   },
   {
     id: "costa-blanca",
     titulo: "Costa Blanca, España",
-    rol: { es: "Dirección y fotografía", en: "Director / DoP" },
+    rol: { es: "Director / DoP", en: "Director / DoP" },
     vimeo: "1201097513"
   },
   {
     id: "jdva",
     titulo: "JDVA",
-    rol: { es: "Dirección y fotografía", en: "Director / DoP" },
+    rol: { es: "Director / DoP", en: "Director / DoP" },
     vimeo: "1209322533",
     anio: "2026"
   },
-
-  {
-    id: "famidesa",
-    titulo: "Famidesa",
-    rol: { es: "Dirección de fotografía y cámara", en: "DoP / Camera" },
-    youtube: "https://www.youtube.com/watch?v=amJ-Ktg5FJ8",
-    loop: "1249699288"
-  },
   {
     id: "la-roche-posay",
-    titulo: "La Roche-Posay — Backstage",
-    rol: { es: "Cámara y edición", en: "Camera / Edit" },
+    titulo: "Laroche Posay, Backstage",
+    rol: { es: "Camera / Edit", en: "Camera / Edit" },
     vimeo: "1201097169"
-  },
-
-  {
-    id: "drexler-taraca",
-    titulo: "Jorge Drexler — Taracá",
-    rol: { es: "Cámara y edición", en: "Camera / Edit" },
-    youtube: "https://www.youtube.com/watch?v=N5TXzAPGppc",
-    loop: "1249700316"
-  },
-  {
-    id: "la-vela-puerca",
-    titulo: "La Vela Puerca",
-    rol: { es: "Edición en vivo", en: "Live Edit" },
-    vimeo: "1201096690"
   },
   {
     id: "cosquin-rock",
     titulo: "Cosquín Rock",
-    rol: { es: "Dirección y fotografía", en: "Director / DoP" },
+    rol: { es: "Director / DoP", en: "Director / DoP" },
     vimeo: "1209310746"
   }
 
