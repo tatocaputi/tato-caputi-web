@@ -70,7 +70,7 @@ window.TRABAJOS = [
   },
   {
     id: "la-roche-posay",
-    titulo: "Laroche Posay, Backstage",
+    titulo: "La Roche-Posay, Backstage",
     rol: { es: "Camera / Edit", en: "Camera / Edit" },
     vimeo: "1201097169"
   },
