@@ -302,11 +302,11 @@ body.is-full {
 /* Velo negro sobre el video: se apaga al pasar el mouse */
 .work-card::before {
   content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
-  background: #030303; opacity: .5;
+  background: #030303; opacity: .25;
   transition: opacity .8s var(--ease);
 }
 .work-card:hover::before, .work-card:focus-visible::before { opacity: 0; }
-@media (hover: none) { .work-card::before { opacity: .3; } }
+@media (hover: none) { .work-card::before { opacity: .15; } }
 .work-card .label {
   position: absolute; left: 1.25rem; right: 1.25rem; bottom: 1.25rem; z-index: 2;
 }
