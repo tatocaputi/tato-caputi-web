@@ -50,7 +50,7 @@ window.TRABAJOS = [
   },
   {
     id: "famidesa",
-    titulo: "Oriental Films - Famidesa",
+    titulo: "Oriental Films, Famidesa",
     rol: { es: "DoP / Camera", en: "DoP / Camera" },
     youtube: "https://www.youtube.com/watch?v=amJ-Ktg5FJ8",
     loop: "1249699288"
