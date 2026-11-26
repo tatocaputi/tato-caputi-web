@@ -199,6 +199,12 @@ body.is-full {
 }
 .role-line strong { display: block; font-weight: 400; color: rgba(240, 239, 232, .9); }
 @media (min-width: 640px) { .role-line { font-size: 10px; } }
+/* Centrada abajo, no en la esquina */
+.foot { position: relative; }
+.foot .role-line {
+  position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);
+  margin: 0; text-align: center; white-space: nowrap;
+}
 
 /* ---------- Acerca ---------- */
 .center-block { flex: 1; display: flex; align-items: center; justify-content: center; }
